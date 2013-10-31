@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+    <Description about="urn:mozilla:install-manifest">
+        <em:id><![CDATA[qqmail_plugin_for_firefox@tencent.com]]></em:id>
+        <em:name><![CDATA[QQ Mail plugin for firefox]]></em:name>
+        <em:version><![CDATA[1.0.0.9]]></em:version>
+        <em:type><![CDATA[2]]></em:type>
+        <em:unpack><![CDATA[true]]></em:unpack>
+        <em:targetApplication>
+            <Description>
+                <em:id><![CDATA[{ec8030f7-c20a-464f-9b0e-13a3a9e97384}]]></em:id>
+                <em:minVersion><![CDATA[3.0]]></em:minVersion>
+                <em:maxVersion><![CDATA[20.*]]></em:maxVersion>
+            </Description>
+        </em:targetApplication>
+        <em:updateURL><![CDATA[https://res.mail.qq.com/zh_CN/xpi/update.rdf]]></em:updateURL>
+        <em:description><![CDATA[Tencent QQ Mail plugin for firefox]]></em:description>
+        <em:creator><![CDATA[Tencent Inc.]]></em:creator>
+        <em:homepageURL><![CDATA[http://mail.qq.com/]]></em:homepageURL>
+    </Description>
+</RDF>

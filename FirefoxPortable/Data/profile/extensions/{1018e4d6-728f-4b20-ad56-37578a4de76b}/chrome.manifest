@@ -1,0 +1,44 @@
+content flagfox jar:chrome/flagfox/content.jar!/content/
+resource flagfox chrome/flagfox/modules/
+resource flagfox-ipdb ipdb/
+
+overlay chrome://browser/content/browser.xul chrome://flagfox/content/overlay.xul
+overlay chrome://navigator/content/navigator.xul chrome://flagfox/content/overlay.xul
+
+locale flagfox en-US jar:chrome/flagfox/content.jar!/locale/en-US/
+
+locale flagfox ar    jar:chrome/flagfox/content.jar!/locale/ar/
+locale flagfox bg    jar:chrome/flagfox/content.jar!/locale/bg/
+locale flagfox ca    jar:chrome/flagfox/content.jar!/locale/ca/
+locale flagfox cs    jar:chrome/flagfox/content.jar!/locale/cs/
+locale flagfox da    jar:chrome/flagfox/content.jar!/locale/da/
+locale flagfox de    jar:chrome/flagfox/content.jar!/locale/de/
+locale flagfox el    jar:chrome/flagfox/content.jar!/locale/el/
+locale flagfox es-AR jar:chrome/flagfox/content.jar!/locale/es-AR/
+locale flagfox es-ES jar:chrome/flagfox/content.jar!/locale/es-ES/
+locale flagfox fa    jar:chrome/flagfox/content.jar!/locale/fa/
+locale flagfox fi    jar:chrome/flagfox/content.jar!/locale/fi/
+locale flagfox fr    jar:chrome/flagfox/content.jar!/locale/fr/
+locale flagfox he    jar:chrome/flagfox/content.jar!/locale/he/
+locale flagfox hr-HR jar:chrome/flagfox/content.jar!/locale/hr-HR/
+locale flagfox hu    jar:chrome/flagfox/content.jar!/locale/hu/
+locale flagfox hy-AM jar:chrome/flagfox/content.jar!/locale/hy-AM/
+locale flagfox is    jar:chrome/flagfox/content.jar!/locale/is/
+locale flagfox it    jar:chrome/flagfox/content.jar!/locale/it/
+locale flagfox ja    jar:chrome/flagfox/content.jar!/locale/ja/
+locale flagfox ko    jar:chrome/flagfox/content.jar!/locale/ko/
+locale flagfox lt    jar:chrome/flagfox/content.jar!/locale/lt/
+locale flagfox lv-LV jar:chrome/flagfox/content.jar!/locale/lv-LV/
+locale flagfox nl    jar:chrome/flagfox/content.jar!/locale/nl/
+locale flagfox pl    jar:chrome/flagfox/content.jar!/locale/pl/
+locale flagfox pt-BR jar:chrome/flagfox/content.jar!/locale/pt-BR/
+locale flagfox pt-PT jar:chrome/flagfox/content.jar!/locale/pt-PT/
+locale flagfox ro    jar:chrome/flagfox/content.jar!/locale/ro/
+locale flagfox ru    jar:chrome/flagfox/content.jar!/locale/ru/
+locale flagfox sr    jar:chrome/flagfox/content.jar!/locale/sr/
+locale flagfox sv-SE jar:chrome/flagfox/content.jar!/locale/sv-SE/
+locale flagfox tr    jar:chrome/flagfox/content.jar!/locale/tr/
+locale flagfox uk-UA jar:chrome/flagfox/content.jar!/locale/uk-UA/
+locale flagfox vi    jar:chrome/flagfox/content.jar!/locale/vi/
+locale flagfox zh-CN jar:chrome/flagfox/content.jar!/locale/zh-CN/
+locale flagfox zh-TW jar:chrome/flagfox/content.jar!/locale/zh-TW/
