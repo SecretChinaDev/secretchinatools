@@ -104,7 +104,7 @@ class Updater(object):
 			print 'ReLoad	/autoupdate.ini				OK!'
 	def getnewsha1(self,path,oldsha1):
 		output = FileUtil.open(path,"wb")
-		output.write(self.netopen('/'+common.CONFIG_SHA1)) 
+		output.write(self.netopen('/'+common.CONFIG_SHA1))
 		output.close()
 		input = FileUtil.open(path,"r")
 		tmp2 = input.read()
@@ -116,7 +116,7 @@ class Updater(object):
 			print 'Verify Failed!'
 			sys.exit()
 		print 'Verify Successful1!'
-		
+
 	def cleandir(self):
 		needclean = Config(common.CONFIG_NEEDCLEAN)
 		for path, sha1v in needclean.getsection('NEEDCLEAN'):
@@ -145,7 +145,7 @@ class Updater(object):
 		print 'Cleaning DIR'
 		self.cleandir()
 		print 'Finished Clean'
-		
+
 
 
 
