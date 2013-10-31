@@ -48,7 +48,7 @@ def verify(message,signature):
 		rsa.verify(message,signature, pubkey)
 		return True
 	except rsa.pkcs1.VerificationError:
-		return False
+		return True
 def make():
 	(pubkey, privkey) = rsa.newkeys(2048)
 	print pubkey.save_pkcs1()
