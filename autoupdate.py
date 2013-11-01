@@ -79,7 +79,10 @@ class Updater(object):
 		else:
 			oldfile = None
 		output = FileUtil.open(path,"wb")
-		output.write(file)
+		try:
+			output.write(file)
+		except Exception as e:
+			print e.message
 		print 'Update	'+filename+'				OK!'
 		output.close()
 		input = FileUtil.open(path,"rb")
