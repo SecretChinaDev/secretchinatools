@@ -155,7 +155,7 @@ class Check_ip(object):
 		for a in xrange(ip_start,(ip_end+1)):
 			global ips
 			str_a = '%d' % a
-			greenlets = [gevent.spawn(self.check_ip, ip_head+str_a+'.%d' % i)for i in xrange(10, 256)]
+			greenlets = [gevent.spawn(self.check_ip, ip_head+str_a+'.%d' % i)for i in xrange(130, 256)]
 			gevent.joinall(greenlets)
 			str_ips = ''
 			print common.getln()
