@@ -1,8 +1,8 @@
-:: wwqgtxx-goagent.bat
+:: secretchina-tools.bat
 :: Main Batch File
    
 @echo off
-title greatagent-ga
+title SecretChina-Tools
 
 set PYTHONDONTWRITEBYTECODE=x
 cd /D "%~dp0"
