@@ -194,7 +194,7 @@ class Common(object):
 	def info(self):
 		info = ''
 		info += '------------------------------------------------------\n'
-		info += 'GreatAgent SimpleProxy Version	: %s \n' % (__version__)
+		info += 'SecretChinaTools SimpleProxy Version	: %s \n' % (__version__)
 		info += 'Uvent Version	  : %s (pyuv/%s libuv/%s)\n' % (__import__('uvent').__version__, __import__('pyuv').__version__, __import__('pyuv').LIBUV_VERSION) if all(x in sys.modules for x in ('pyuv', 'uvent')) else ''
 		info += 'Listen Address	 : %s:%d\n' % (self.LISTEN_IP, self.LISTEN_PORT)
 		info += 'Local Proxy		: %s:%s\n' % (self.PROXY_HOST, self.PROXY_PORT) if self.PROXY_ENABLE else ''
