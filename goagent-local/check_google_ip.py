@@ -155,7 +155,7 @@ class Check_ip(object):
 		for a in xrange(ip_start,(ip_end+1)):
 			global ips
 			str_a = '%d' % a
-			greenlets = [gevent.spawn(self.check_ip, ip_head+str_a+'.%d' % i)for i in xrange(130, 256)]
+			greenlets = [gevent.spawn(self.check_ip, ip_head+str_a+'.%d' % i)for i in xrange(1, 256)]
 			gevent.joinall(greenlets)
 			str_ips = ''
 			print common.getln()
@@ -222,14 +222,16 @@ def main():
 	common.write('Google Cn Ip:')
 	common.writeline()
 	common.writeconfig('google_cn','hosts','')
-	check_ip.run(__filename__,'203.208.',46,46)
+	check_ip.run(__filename__,'173.194.', 72, 72)
 	common.writeips('google_cn','hosts')
+	'''
 	if common.getconfig('google_cn','hosts') == '' :
 		print 'Can\'t Find Google Cn Ip,Change To Google_hk'
 		common.writeconfig('gae','profile','google_hk')
 	else :
 		common.writeconfig('gae','profile','google_cn')
 		print 'Find Google Cn Ip Successful,Change To Google_cn'
+	'''
 	if need_google_hk:
 		common.writeline()
 		common.write('Google Hk Ip:')
